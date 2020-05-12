@@ -1,0 +1,18 @@
+// opennig
+
+.cv-opening p {
+  font-family: "Merriweather", serif;
+  line-height: 1.6;
+  font-weight: lighter;
+  font-size: $l-size * 1.2;
+}
+
+.cv-opening {
+  padding-top: $xxl-size * 1.2;
+}
+
+@media only screen and (max-width: 600px) {
+  .cv-opening p {
+    font-size: $l-size;
+  }
+}

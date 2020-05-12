@@ -1,0 +1,49 @@
+.cv {
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: $xxl-size * 1.2;
+  font-family: "Roboto Mono", monospace;
+}
+
+.content-pedding {
+  padding-top: $xxl-size * 1.2;
+}
+
+.cv h3 {
+  padding-bottom: $l-size;
+  border-bottom: 1.6px solid $blue-light;
+  margin-bottom: $xl-size;
+}
+
+.cv .nav-link {
+  font-size: $m-size;
+}
+
+.cv h3,
+.cv h4 {
+  font-family: "Roboto Mono", monospace;
+}
+
+.icon {
+  width: $l-size / 1.2;
+  padding: $l-size 0;
+}
+
+@media only screen and (max-width: 1335px) {
+  .cv {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .cv {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .cv {
+    width: 95%;
+    padding: 0 $m-size;
+  }
+}

@@ -1,0 +1,55 @@
+// education
+
+.cv-education__item {
+  display: flex;
+}
+
+.cv-education__item__header {
+  border-right: 1.6px solid $blue-light;
+  margin-right: $xl-size;
+  padding-right: $xl-size;
+}
+
+@media only screen and (max-width: 600px) {
+  .cv-education__item {
+    flex-direction: column;
+  }
+
+  .cv-education__item__header {
+    border: none;
+    margin-right: 0;
+    padding-right: 0;
+  }
+
+  .cv-education__item__header p {
+    display: flex;
+    width: fit-content;
+    padding-bottom: $l-size;
+    border-bottom: 1.6px solid $blue-light;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  .cv-education__item {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .cv-education__item__header {
+    border: none;
+    margin-right: 0;
+    padding-right: 0;
+    width: 50%;
+  }
+
+  .cv-education__item__info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-left: $xl-size;
+    border-left: 1.6px solid $blue-light;
+  }
+
+  .cv-education__item__header p {
+  }
+}

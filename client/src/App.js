@@ -1,31 +1,19 @@
-import React, { useEffect } from "react";
-import logo from "./logo.svg";
-import axios from "axios";
+import React from "react";
+import Header from "./components/Header";
+import About from "./components/About";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
+import StickyContactBar from "./components/StickyContactBar";
 
 function App() {
-  useEffect(() => {
-    axios
-      .get("/api/test")
-      .then(() => console.log("Test is working"))
-      .catch((e) => console.log(e));
-  }, []);
-
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <div className="container">
+        <About />
+        <Projects />
+        <Contact />
+      </div>
     </div>
   );
 }

@@ -1,0 +1,15 @@
+.header {
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  width: 100%;
+  padding: $m-size 0;
+  background-color: $blue;
+  //padding: $m-size 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}

@@ -1,0 +1,115 @@
+.forecasts {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: $xxl-size;
+}
+
+// main forecast
+
+.main-forecast {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.main-forecast h4 {
+  margin-top: $xl-size;
+  margin-bottom: $m-size;
+}
+.main-forecast p {
+  margin-top: 0;
+}
+
+.main-forecast h5 {
+  font-size: $xxl-size;
+  margin-top: $m-size;
+  margin-bottom: $xl-size;
+}
+
+.currently-forecast {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.currently-forecast__main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.currently-forecast__item {
+  box-sizing: border-box;
+  display: flex;
+  width: 32%;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.currently-forecast__item h3 {
+  margin: 0;
+}
+
+.currently-forecast__item__icon {
+  background-color: darken($blue, $amount: 1);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: $xxl-size;
+  height: $xxl-size;
+  margin-right: $l-size;
+}
+
+.currently-forecast__item__content {
+  display: flex;
+  flex-direction: column;
+  padding: $m-size 0;
+}
+.currently-forecast__item__content h4 {
+  margin: 0;
+}
+
+.currently-forecast__item__value {
+  margin: 0;
+  margin-top: $m-size;
+  opacity: 0.6;
+  font-weight: 700;
+  font-size: $m-size * 1.2;
+}
+
+.value__unit {
+  font-weight: 300;
+  font-style: italic;
+}
+
+.forecast-box-enter {
+  opacity: 0;
+  transform: scale(0.84);
+}
+
+.forecast-box-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transform-origin: bottom;
+  transition: transform 300ms ease-in, opacity 300ms ease-in,
+    translate 300ms ease-in;
+}
+.forecast-box-exit {
+  opacity: 1;
+  transform: scale(1);
+  transform-origin: bottom;
+}
+.forecast-box-exit-active {
+  opacity: 0;
+  transform: scale(0.84);
+  transition: transform 300ms ease-in, opacity 300ms ease-in,
+    translate 300ms ease-in;
+}

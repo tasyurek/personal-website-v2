@@ -1,6 +1,7 @@
 const express = require("express");
 const path = require("path");
 const app = express();
+const weatherRouter = require("./weather-app/weather-router");
 
 const port = process.env.PORT || 3000;
 
@@ -9,6 +10,8 @@ console.log(process.env.NODE_ENV);
 const publicPath = path.join(__dirname, "client", "build");
 
 app.use(express.static(publicPath));
+
+app.use(weatherRouter);
 
 app.get("/api/test", (req, res) => {
   console.log("api/test");

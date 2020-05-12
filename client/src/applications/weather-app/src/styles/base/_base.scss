@@ -1,0 +1,71 @@
+:root {
+  font-size: 62.5%;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $blue;
+  color: $grey;
+}
+
+button {
+  cursor: pointer;
+}
+.weather-app {
+  width: 100%;
+  margin: 0;
+}
+
+.weather-app-content {
+  // background-color: $blue-light;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  margin: auto;
+
+  padding-bottom: 0;
+  width: 50%;
+}
+
+.box {
+  box-sizing: border-box;
+  background-color: lighten($blue, $amount: 6);
+  padding: $m-size;
+  border-radius: 4px;
+  margin-bottom: $m-size;
+}
+
+.link {
+  color: $grey;
+  text-decoration: none;
+  color: $grey;
+}
+
+.link:hover {
+  color: white;
+}
+
+.logo {
+  width: $xl-size;
+  margin-right: $l-size;
+}
+
+@media only screen and (max-width: 1200px) {
+  .weather-app-content {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .weather-app-content {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .weather-app-content {
+    width: 95%;
+  }
+}

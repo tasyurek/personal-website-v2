@@ -1,0 +1,11 @@
+.weather-icon {
+  height: $xl-size;
+  color: $grey;
+  padding: $m-size;
+}
+
+.weather-icon--hourly {
+  height: $m-size;
+  color: $grey;
+  padding: 0;
+}

@@ -1,0 +1,49 @@
+.responsive-navbar {
+  width: 60%;
+}
+
+.responsive-navbar__actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.responsive-navbar__actions .icon {
+  cursor: pointer;
+}
+
+.responsive-navbar__navs .nav-link {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: $l-size;
+  font-size: $m-size * 1.1;
+}
+
+.responsive-navbar__navs .nav-link:hover {
+  background-color: lighten($blue, $amount: 3);
+  color: lighten($grey, $amount: 3);
+}
+
+.responsive-navbar__navs--closed {
+  display: none;
+}
+
+@media only screen and (max-width: 1335px) {
+  .responsive-navbar {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .responsive-navbar {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .responsive-navbar {
+    width: 95%;
+    padding: 0 $m-size;
+  }
+}

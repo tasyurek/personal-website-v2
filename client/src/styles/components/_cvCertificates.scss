@@ -1,0 +1,35 @@
+.cv-certificates__item {
+  display: flex;
+  margin-bottom: $xl-size;
+}
+
+.cv-certificates__item__header {
+  width: 50%;
+
+  padding-right: $xl-size;
+  margin-right: $xl-size;
+  border-right: 1.6px solid $blue-light;
+}
+
+.certificate-link {
+  background-color: $grey;
+  color: $blue;
+  font-weight: bold;
+  padding: $m-size/3 $l-size/2;
+}
+
+.certificate-link:hover {
+  opacity: 0.9;
+}
+
+@media only screen and (max-width: 600px) {
+  .cv-certificates__item {
+    flex-direction: column;
+  }
+  .cv-certificates__item__header {
+    width: 100%;
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+}

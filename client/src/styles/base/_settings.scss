@@ -1,0 +1,19 @@
+$s-size: 1.2rem;
+$m-size: 1.6rem;
+$l-size: 2.58rem;
+$xl-size: 4.18rem;
+$xxl-size: 6.77rem;
+
+// COLORS
+
+$blue: #10111f;
+$blue-light: #1f2139;
+$grey: #a7a8c9;
+$red: #ffd31d;
+$off-yellow: #ffd31d;
+$yellow: #ffe277;
+$error: #d63447;
+$success: #58b4ae;
+
+$shadow: 4px 4px 8px darken($blue, $amount: 2),
+  -4px -4px 8px darken($blue, $amount: 2);

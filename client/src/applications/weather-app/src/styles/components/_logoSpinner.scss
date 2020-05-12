@@ -1,0 +1,34 @@
+#logo-spinner {
+  position: relative;
+}
+#logo-spinner:hover {
+  top: 10px;
+}
+
+.logo-spinner {
+  width: $l-size;
+  display: flex;
+  margin: $xxl-size auto;
+}
+
+.logo__path-2 {
+  position: relative;
+  animation: path2 2s linear infinite;
+}
+
+@keyframes path2 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.spinner {
+  width: $xxl-size * 2;
+  margin: $xxl-size auto;
+}

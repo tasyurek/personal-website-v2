@@ -1,0 +1,28 @@
+.personal-info__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.personal-info__item__block {
+  width: 50%;
+}
+
+.personal-info__item__block:last-child {
+  padding-left: $xl-size;
+  border-left: 1.6px solid $blue-light;
+}
+
+@media only screen and (max-width: 600px) {
+  .personal-info__item {
+    flex-direction: column;
+  }
+
+  .personal-info__item__block {
+    width: 100%;
+  }
+
+  .personal-info__item__block:last-child {
+    border: none;
+    padding: 0;
+  }
+}

@@ -1,0 +1,9 @@
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hourly-forecast__container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE and Edge */
+.hourly-forecast__container {
+  -ms-overflow-style: none;
+}

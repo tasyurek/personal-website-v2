@@ -1,0 +1,60 @@
+// daily forecast
+
+.daily-forecast {
+  width: 100%;
+}
+
+.daily-forecast h4 {
+  margin-top: 0;
+  padding-left: $m-size;
+}
+
+.daily-forecast__container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.daily-forecast__container__item {
+  padding: 0 $m-size;
+  display: flex;
+  box-sizing: border-box;
+  background-color: lighten($blue, $amount: 6);
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 0.5px solid lighten($blue, $amount: 2);
+}
+
+.daily-forecast__container__item__temperature {
+  display: flex;
+  flex-direction: row;
+}
+
+.daily-forecast__container__item__temperature p {
+  width: $xxl-size;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: 600;
+}
+
+.daily-forecast__container__item__temperature p:last-child {
+  opacity: 0.5;
+}
+
+.active-day {
+  padding: $m-size;
+  background-color: lighten($blue, $amount: 7);
+}
+
+.active-day p {
+  font-weight: 600;
+}
+// responsive
+
+@media only screen and (max-width: 350px) {
+  .daily-forecast__container__item__temperature p {
+    width: $xl-size;
+  }
+}

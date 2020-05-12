@@ -1,0 +1,32 @@
+.cv-biography__content {
+  display: flex;
+  align-items: flex-start;
+
+  justify-content: space-between;
+}
+
+.cv-biography__content h3 {
+  margin-top: 0;
+}
+
+.cv-biography__content__photo {
+  min-width: $xxl-size * 3.2;
+  flex-grow: 1;
+  margin-right: $xl-size;
+}
+
+.cv-biography__content p {
+  line-height: 1.6;
+  margin-top: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .cv-biography__content {
+    flex-direction: column;
+  }
+
+  .cv-biography__content__photo {
+    margin-bottom: $xl-size;
+    width: 100%;
+  }
+}

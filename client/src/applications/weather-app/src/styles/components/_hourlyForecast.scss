@@ -1,0 +1,48 @@
+// hourly forecast
+
+.hourly-forecast {
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.hourly-forecast h4 {
+  margin-top: 0;
+  padding-left: $m-size;
+}
+
+.hourly-forecast__container {
+  display: flex;
+  direction: row;
+  width: 100%;
+  overflow: auto;
+  padding-bottom: 10px;
+
+  scroll-behavior: smooth;
+  position: relative;
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  transition: all 0.2s;
+  will-change: transform;
+  user-select: none;
+  cursor: pointer;
+}
+
+.hourly-forecast__container.active {
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+}
+
+.hourly-forecast__container__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 72px;
+  margin-right: $m-size / 2;
+  padding: $m-size 0;
+}
+
+.hourly-forecast__container__item p:last-child {
+  font-weight: 600;
+}

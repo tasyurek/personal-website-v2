@@ -1,0 +1,31 @@
+.search-bar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.search-bar input {
+  background-color: lighten($blue, $amount: 6);
+  border: none;
+  color: lighten($grey, $amount: 12);
+  flex-grow: 4;
+  font-weight: 600;
+  font-size: $m-size;
+  outline: none;
+  opacity: 0.9;
+  padding: $m-size $m-size * 1.2;
+}
+
+.search-bar input::placeholder {
+  color: $grey;
+  opacity: 0.6;
+}
+
+.search-bar__settings {
+  cursor: pointer;
+  flex-grow: 1;
+  height: $l-size;
+  margin: 0 $l-size;
+  margin-left: $l-size + $m-size;
+}

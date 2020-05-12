@@ -1,0 +1,24 @@
+.cv-responsive-navbar {
+  background-color: $blue;
+}
+
+.cv-responsive-navbar__actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cv-responsive-navbar__navs .nav-link {
+  display: block;
+  padding: $l-size;
+  font-size: $m-size * 1.1;
+  text-align: center;
+  width: 100%;
+}
+
+.cv-responsive-navbar__navs--closed {
+  display: none;
+}
+
+.icon--menu {
+  cursor: pointer;
+}

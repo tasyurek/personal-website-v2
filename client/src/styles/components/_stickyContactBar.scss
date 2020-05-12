@@ -1,0 +1,60 @@
+.sticky-contact-bar {
+  position: fixed;
+  bottom: $l-size;
+  right: $l-size;
+  display: flex;
+  align-items: center;
+  //padding: $m-size;
+  flex-direction: row-reverse;
+  background-color: $off-yellow;
+  border-radius: 4px;
+}
+
+.sticky-contact-bar__action {
+  display: flex;
+  align-items: center;
+  min-height: 100%;
+  padding: $m-size;
+  cursor: pointer;
+}
+
+.sticky-contact-bar__action__button {
+  display: flex;
+  width: $l-size;
+  height: $l-size;
+  color: $blue;
+}
+
+.spread-bar {
+  display: flex;
+  align-items: center;
+  min-height: 100%;
+}
+
+.spread-bar__nav {
+  display: flex;
+  padding: $m-size;
+  min-height: 100%;
+}
+
+.spread-bar__nav:hover {
+  background-color: $yellow;
+}
+
+.spread-bar__nav__icon {
+  width: $l-size;
+  height: $l-size;
+  cursor: pointer;
+  color: $blue;
+}
+.spread-bar__nav__icon:active {
+  color: whitesmoke;
+}
+
+.spread-bar__nav__icon:hover {
+}
+
+@media only screen and (max-width: 600px) {
+  .sticky-contact-bar {
+  }
+}
