@@ -1,6 +1,5 @@
 const request = require("request");
 const chalk = require("chalk");
-require("dotenv").config();
 
 const forecast = (latitude, longitude, lang, units, callback) => {
   const url =

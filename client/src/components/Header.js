@@ -14,15 +14,15 @@ const Header = (props) => {
     }
   }, [width]);
 
-  // const calcWidth = () => {
-  //   setWidth(window.innerWidth);
-  // };
+  const calcWidth = () => {
+    setWidth(window.innerWidth);
+  };
 
-  // window.onresize = calcWidth;
+  window.onresize = calcWidth;
 
   return (
     <div className="header">
-      {/*isResponsive ? <Navbar /> : <ResponsiveNavbar />*/}
+      {isResponsive ? <Navbar /> : <ResponsiveNavbar />}
     </div>
   );
 };

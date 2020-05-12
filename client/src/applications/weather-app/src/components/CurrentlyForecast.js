@@ -5,7 +5,6 @@ import { connect } from "react-redux";
 
 const CurrentlyForecast = (props) => {
   const forecastDataSet = getForecastDataSet(props.data, props.settings.units);
-  console.log(props.data);
 
   const OverallForecast = () => (
     <TransitionGroup className="currently-forecast" component={null}>
