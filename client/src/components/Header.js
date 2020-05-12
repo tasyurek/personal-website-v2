@@ -12,6 +12,10 @@ const Header = (props) => {
     } else {
       setResponsive(false);
     }
+
+    return () => {
+      setResponsive(false);
+    };
   }, [width]);
 
   const calcWidth = () => {

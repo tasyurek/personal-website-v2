@@ -16,6 +16,7 @@ button {
 .weather-app {
   width: 100%;
   margin: 0;
+  font-family: "Inter", sans-serif;
 }
 
 .weather-app-content {
@@ -24,7 +25,6 @@ button {
   box-sizing: border-box;
   flex-direction: column;
   margin: auto;
-
   padding-bottom: 0;
   width: 50%;
 }

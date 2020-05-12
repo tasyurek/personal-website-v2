@@ -1,8 +1,13 @@
 .cv {
-  width: 60%;
+  width: 100%;
   margin: 0 auto;
   margin-bottom: $xxl-size * 1.2;
   font-family: "Roboto Mono", monospace;
+}
+
+.cv__content {
+  width: 60%;
+  margin: 0 auto;
 }
 
 .content-pedding {
@@ -30,19 +35,19 @@
 }
 
 @media only screen and (max-width: 1335px) {
-  .cv {
+  .cv__content {
     width: 80%;
   }
 }
 
 @media only screen and (max-width: 992px) {
-  .cv {
+  .cv__content {
     width: 85%;
   }
 }
 
 @media only screen and (max-width: 600px) {
-  .cv {
+  .cv__content {
     width: 95%;
     padding: 0 $m-size;
   }

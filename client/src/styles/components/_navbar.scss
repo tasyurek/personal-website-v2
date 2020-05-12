@@ -3,11 +3,10 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 0 auto !important;
+  margin: auto !important;
   align-items: center;
   background-color: $blue !important;
   width: 60%;
-  padding: $m-size 0;
   //margin: 0 auto;
 }
 
@@ -16,7 +15,6 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 108rem;
 }
 .navbar-container .left-content {
   display: flex;
@@ -37,7 +35,7 @@
 }
 
 .nav-link {
-  color: darken($grey, $amount: 5);
+  color: darken($grey, $amount: 3);
   font-size: $m-size * 1.2;
   margin: 0;
   padding: 0;
@@ -81,7 +79,6 @@
     width: 100%;
   }
 }
-
 @media only screen and (max-width: 1335px) {
   .navbar {
     width: 80%;

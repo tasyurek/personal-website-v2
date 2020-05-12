@@ -6,10 +6,11 @@
   align-items: center;
   margin: 0;
   width: 100%;
-  padding: $m-size 0;
+  padding: $s-size 0;
   background-color: $blue;
   //padding: $m-size 0;
   position: sticky;
   top: 0;
   z-index: 10;
+  box-shadow: 0px 1px 2px 0px #16182c;
 }

@@ -16,7 +16,6 @@ const Projects = (props) => {
       <div className="project__item">
         <div className="project__item__info">
           <h3>Weather App</h3>
-
           <p className="project-about">
             This application gives us the daily and weekly weather forecasts of
             the desired location. ReactJS, Context API and SCSS were used in
@@ -25,6 +24,13 @@ const Projects = (props) => {
           <Link to="/weather" className="app-link" target="_blank">
             Check it out!
           </Link>
+          <div className="features">
+            <p>NodeJS</p>
+            <p>Express</p>
+            <p>ReactJS</p>
+            <p>Context API</p>
+            <p>SCSS</p>
+          </div>
         </div>
         <div className="project__item__img">
           <WeatherAppSVG className="img" />
@@ -40,6 +46,11 @@ const Projects = (props) => {
           <a href="http://www.giby.io" className="app-link" target="_blank">
             Check it out!
           </a>
+          <div className="features">
+            <p>ReactJS</p>
+            <p>Redux</p>
+            <p>SCSS</p>
+          </div>
         </div>
         <div className="project__item__img">
           <RaffleAppSVG className="img" />

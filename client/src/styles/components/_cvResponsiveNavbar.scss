@@ -1,5 +1,9 @@
 .cv-responsive-navbar {
+  display: flex;
+  flex-direction: column;
   background-color: $blue;
+  width: 80%;
+  margin: auto;
 }
 
 .cv-responsive-navbar__actions {
@@ -21,4 +25,17 @@
 
 .icon--menu {
   cursor: pointer;
+}
+
+@media only screen and (max-width: 992px) {
+  .cv-responsive-navbar {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .cv-responsive-navbar {
+    width: 95%;
+    padding: 0 $m-size;
+  }
 }

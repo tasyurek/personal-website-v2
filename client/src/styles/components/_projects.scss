@@ -28,12 +28,32 @@
   padding-right: $l-size;
 }
 
-.project__item__info p {
-  margin-bottom: $xl-size;
+.project__item__info .features {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: $l-size;
+}
+
+.project__item__info .features p {
+  background-color: #a7a8c92a;
+  color: $grey;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: $m-size * 0.85;
+  margin: $s-size;
+  margin-left: 0;
+  margin-right: $m-size;
+  border-radius: 32px;
+  white-space: nowrap;
+  padding: $s-size/2 $m-size;
+}
+
+.project__item__info .project-about {
+  margin-bottom: $l-size;
 }
 
 .project__item__img {
-  min-width: 50%;
+  width: 50%;
 }
 
 .app-link {

@@ -4,23 +4,31 @@ import { ReactComponent as ProfilePhoto } from "../assets/profile.svg";
 const Navbar = (props) => {
   const [active, setActive] = useState("about");
 
-  window.addEventListener("scroll", function (event) {
-    try {
-      var scroll = this.scrollY;
-      scroll += 2;
-      let about = this.document.querySelector("#about");
-      let projects = this.document.querySelector("#projects");
+  useEffect(() => {
+    const handleScroll = (event) => {
+      try {
+        let scroll = event.target.scrollY;
+        scroll += 2;
+        let about = document.querySelector("#about");
+        let projects = document.querySelector("#projects");
 
-      if (scroll >= about.offsetTop && scroll < projects.offsetTop) {
-        setActive("about");
+        if (scroll >= about.offsetTop && scroll < projects.offsetTop) {
+          setActive("about");
+        }
+        if (scroll >= projects.offsetTop) {
+          setActive("projects");
+        }
+      } catch (e) {
+        console.log(e.message);
       }
-      if (scroll >= projects.offsetTop) {
-        setActive("projects");
-      }
-    } catch (e) {
-      console.log(e.message);
-    }
-  });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <div className="navbar">

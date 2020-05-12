@@ -3,8 +3,8 @@ import { ReactComponent as LogoIcon } from "../assets/logo.svg";
 
 const NavBar = (props) => {
   return (
-    <div className="navbar">
-      <div className="navbar__content">
+    <div className="weather-navbar">
+      <div className="weather-navbar__content">
         <LogoIcon className="logo" />
         <h4>Weather App</h4>
       </div>

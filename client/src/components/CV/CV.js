@@ -12,13 +12,15 @@ const CV = () => {
   return (
     <div className="cv">
       <Header />
-      <Opening />
-      <Biography />
-      <PersonalInfo />
-      <Experiances />
-      <Education />
-      <Skills />
-      <Certificates />
+      <div className="cv__content">
+        <Opening />
+        <Biography />
+        <PersonalInfo />
+        <Experiances />
+        <Education />
+        <Skills />
+        <Certificates />
+      </div>
     </div>
   );
 };

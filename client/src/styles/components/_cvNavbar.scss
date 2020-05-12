@@ -1,11 +1,16 @@
 .cv-header {
-  display: block;
+  display: flex;
+  flex-direction: column;
   position: sticky;
   top: 0;
+  width: 100%;
+  box-shadow: 0px 1px 2px 0px #16182c;
 }
 
 .cv-navbar {
   display: flex;
+  margin: auto;
+  width: 60%;
   justify-content: space-between;
   position: sticky;
   top: 0;
@@ -27,14 +32,22 @@
   color: lighten($grey, $amount: 14);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1335px) {
   .cv-navbar {
-    display: none;
+    width: 80%;
   }
 }
 
 @media only screen and (max-width: 992px) {
   .cv-navbar {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .cv-navbar {
+    width: 95%;
+    padding: 0 $m-size;
     display: none;
   }
 }
