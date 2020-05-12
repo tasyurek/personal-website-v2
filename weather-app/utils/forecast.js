@@ -3,9 +3,9 @@ const chalk = require("chalk");
 require("dotenv").config();
 
 const forecast = (latitude, longitude, lang, units, callback) => {
-  console.log(process.env.DARK_SKY_URL);
+  console.log("dark-sky _>", process.env.DARK_SKY_URL);
   const url =
-    process.env.DARK_SKY_URL +
+    "https://api.darksky.net/forecast/9eaf6ad002fb4a9e6bb6e736a09ec330/" +
     latitude +
     "," +
     longitude +
