@@ -4,54 +4,46 @@ import { ReactComponent as LeftArrow } from "../../assets/chevron-left-solid.svg
 const Navbar = () => {
   const [active, setActive] = useState("biography");
 
-  window.addEventListener("scroll", function (event) {
-    try {
-      var scroll = this.scrollY;
+  useEffect(() => {
+    function handleScroll(event) {
+      try {
+        var scroll = this.scrollY;
 
-      let biography = this.document.querySelector("#biography");
-      let personalInfo = this.document.querySelector("#personal-info");
-      let experiances = this.document.querySelector("#experiances");
-      let education = this.document.querySelector("#education");
-      let skills = this.document.querySelector("#skills");
-      let certificates = this.document.querySelector("#certificates");
+        let biography = this.document.querySelector("#biography");
+        let personalInfo = this.document.querySelector("#personal-info");
+        let experiances = this.document.querySelector("#experiances");
+        let education = this.document.querySelector("#education");
+        let skills = this.document.querySelector("#skills");
 
-      let screenHeight = this.screen.height;
-      let certificatesHeight = certificates.clientHeight;
-
-      scroll += 2;
-      // if (
-      //   certificates.offsetTop - scroll <=
-      //   screenHeight - certificatesHeight
-      // ) {
-      //   console.log(
-      //     certificates.offsetTop,
-      //     scroll,
-      //     screenHeight,
-      //     certificatesHeight
-      //   );
-      //   setActive("certificates");
-      //}
-      if (scroll >= biography.offsetTop && scroll < personalInfo.offsetTop) {
-        setActive("biography");
-      } else if (
-        scroll >= personalInfo.offsetTop &&
-        scroll < experiances.offsetTop
-      ) {
-        setActive("personal-info");
-      } else if (
-        scroll >= experiances.offsetTop &&
-        scroll < education.offsetTop
-      ) {
-        setActive("experiances");
-      } else if (scroll >= education.offsetTop && scroll < skills.offsetTop) {
-        setActive("education");
-      } else if (scroll >= skills.offsetTop) {
-        setActive("skills");
+        scroll += 2;
+        if (scroll >= biography.offsetTop && scroll < personalInfo.offsetTop) {
+          setActive("biography");
+        } else if (
+          scroll >= personalInfo.offsetTop &&
+          scroll < experiances.offsetTop
+        ) {
+          setActive("personal-info");
+        } else if (
+          scroll >= experiances.offsetTop &&
+          scroll < education.offsetTop
+        ) {
+          setActive("experiances");
+        } else if (scroll >= education.offsetTop && scroll < skills.offsetTop) {
+          setActive("education");
+        } else if (scroll >= skills.offsetTop) {
+          setActive("skills");
+        }
+      } catch (e) {
+        console.log(e.message);
       }
-    } catch (e) {
-      console.log(e.message);
     }
-  });
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <div className="cv-navbar">

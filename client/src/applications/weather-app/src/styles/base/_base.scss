@@ -52,6 +52,11 @@ button {
   margin-right: $l-size;
 }
 
+#weather-logo {
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.7));
+  //box-shadow: 2px 2px 4px #000, -2px -2px 4px #000;
+}
+
 @media only screen and (max-width: 1200px) {
   .weather-app-content {
     width: 70%;

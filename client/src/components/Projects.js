@@ -21,7 +21,12 @@ const Projects = (props) => {
             the desired location. ReactJS, Context API and SCSS were used in
             Frontend. NodeJS, Express and DarkSky API were used in Backend.
           </p>
-          <Link to="/weather" className="app-link" target="_blank">
+          <Link
+            to="/weather"
+            className="app-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Check it out!
           </Link>
           <div className="features">
@@ -43,7 +48,12 @@ const Projects = (props) => {
             It is an application that creates sequences by randomly drawing the
             determined names. ReactJS, Redux and SCSS are used in Frontend.
           </p>
-          <a href="http://www.giby.io" className="app-link" target="_blank">
+          <a
+            href="http://www.giby.io"
+            className="app-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Check it out!
           </a>
           <div className="features">

@@ -1,6 +1,5 @@
 import React from "react";
 import HourlyForecast from "./HourlyForecast";
-import CurrentlyForecast from "./CurrentlyForecast";
 import DailyForecast from "./DailyForecast";
 import MainForecast from "./MainForecast";
 

@@ -17,6 +17,7 @@ const Education = () => {
             className="nav-link"
             href="http://atilim.edu.tr/en"
             target="_blank"
+            rel="noopener noreferrer"
           >
             www.atilim.edu.tr
           </a>

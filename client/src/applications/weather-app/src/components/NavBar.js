@@ -1,5 +1,5 @@
 import React from "react";
-import { ReactComponent as LogoIcon } from "../assets/logo.svg";
+import { ReactComponent as LogoIcon } from "../assets/weather-app-logo-v2.svg";
 
 const NavBar = (props) => {
   return (

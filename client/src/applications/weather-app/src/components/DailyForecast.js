@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { setForecast } from "../actions/forecast";
 import { connect } from "react-redux";
 import { getForecastIcon, getDayName } from "../selectors/forecast";
@@ -11,7 +11,6 @@ const DailyForecast = ({ data, dispatch }) => {
 
   const dailyForecasts = data.map((forecast, index) => {
     const ForecastIcon = getForecastIcon[forecast.icon];
-    const date = new Date(forecast.time * 1000);
     if (currentDay === index) {
       dailyForecastClass = "daily-forecast__container__item active-day";
     } else {

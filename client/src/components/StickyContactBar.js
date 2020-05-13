@@ -34,6 +34,7 @@ const SpreadBar = () => {
         className="spread-bar__nav"
         href="https://www.linkedin.com/in/onur-can-ta%C5%9Fy%C3%BCrek-58829616a/"
         target="_blank"
+        rel="noopener noreferrer"
       >
         <LinkedInSVG className="spread-bar__nav__icon" />
       </a>
@@ -41,6 +42,7 @@ const SpreadBar = () => {
         className="spread-bar__nav"
         href="https://www.instagram.com/onurcantasyurek/"
         target="_blank"
+        rel="noopener noreferrer"
       >
         <InstagramSVG className="spread-bar__nav__icon" />
       </a>
@@ -48,15 +50,12 @@ const SpreadBar = () => {
         className="spread-bar__nav"
         href="https://github.com/tasyurek/"
         target="_blank"
+        rel="noopener noreferrer"
       >
         <GithupSVG className="spread-bar__nav__icon" />
       </a>
     </div>
   );
-};
-
-const CollapsedBar = () => {
-  return <div className="collapsed-bar">CollapsedBar</div>;
 };
 
 export default StickyContactBar;

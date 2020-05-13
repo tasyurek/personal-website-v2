@@ -40,6 +40,7 @@ const CertificateList = () => {
               href={certificate.courseURL}
               className="nav-link"
               target="_blank"
+              rel="noopener noreferrer"
             >
               {certificate.name}
             </a>
@@ -48,6 +49,7 @@ const CertificateList = () => {
             href={certificate.url}
             className="nav-link certificate-link"
             target="_blank"
+            rel="noopener noreferrer"
           >
             Check
           </a>

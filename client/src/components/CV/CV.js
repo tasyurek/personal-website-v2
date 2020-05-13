@@ -9,6 +9,7 @@ import Certificates from "./Certificates";
 import Header from "./Header";
 
 const CV = () => {
+  document.title = "CV";
   return (
     <div className="cv">
       <Header />

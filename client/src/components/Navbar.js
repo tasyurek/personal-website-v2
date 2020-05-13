@@ -5,12 +5,12 @@ const Navbar = (props) => {
   const [active, setActive] = useState("about");
 
   useEffect(() => {
-    const handleScroll = (event) => {
+    function handleScroll(event) {
       try {
-        let scroll = event.target.scrollY;
+        let scroll = this.scrollY;
         scroll += 2;
-        let about = document.querySelector("#about");
-        let projects = document.querySelector("#projects");
+        let about = this.document.querySelector("#about");
+        let projects = this.document.querySelector("#projects");
 
         if (scroll >= about.offsetTop && scroll < projects.offsetTop) {
           setActive("about");
@@ -21,7 +21,7 @@ const Navbar = (props) => {
       } catch (e) {
         console.log(e.message);
       }
-    };
+    }
 
     window.addEventListener("scroll", handleScroll);
 

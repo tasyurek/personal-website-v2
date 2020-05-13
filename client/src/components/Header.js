@@ -14,7 +14,7 @@ const Header = (props) => {
     }
 
     return () => {
-      setResponsive(false);
+      //setResponsive(false);
     };
   }, [width]);
 
