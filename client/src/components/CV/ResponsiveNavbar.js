@@ -29,22 +29,22 @@ const ResponsiveNavbar = () => {
             : "cv-responsive-navbar__navs--closed"
         }
       >
-        <a href="#biography" className="nav-link">
+        <a href="#biography" className="nav-link" onClick={onMenuClick}>
           Biography
         </a>
-        <a href="#skills" className="nav-link">
+        <a href="#personal-info" className="nav-link" onClick={onMenuClick}>
           Personal Info
         </a>
-        <a href="#biography" className="nav-link">
+        <a href="#experiances" className="nav-link" onClick={onMenuClick}>
           Experiances
         </a>
-        <a href="#skills" className="nav-link">
+        <a href="#education" className="nav-link" onClick={onMenuClick}>
           Education
         </a>
-        <a href="#biography" className="nav-link">
+        <a href="#skills" className="nav-link" onClick={onMenuClick}>
           Skills
         </a>
-        <a href="#certificates" className="nav-link">
+        <a href="#certificates" className="nav-link" onClick={onMenuClick}>
           Certificates
         </a>
       </div>

@@ -26,16 +26,16 @@ const ResponsiveNavbar = () => {
           isOpen ? "responsive-navbar__navs" : "responsive-navbar__navs--closed"
         }
       >
-        <a className="nav-link" href="#about">
+        <a className="nav-link" href="#about" onClick={onMenuClick}>
           About
         </a>
-        <a className="nav-link" href="#projects">
+        <a className="nav-link" href="#projects" onClick={onMenuClick}>
           Projects
         </a>
-        <a className="nav-link" href="#contact">
+        <a className="nav-link" href="#contact" onClick={onMenuClick}>
           Contact
         </a>
-        <a className="nav-link" href="/cv">
+        <a className="nav-link" href="/cv" onClick={onMenuClick}>
           CV
         </a>
       </div>
