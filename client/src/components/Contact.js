@@ -71,7 +71,7 @@ const Contact = (props) => {
       setSuccess(false);
     } else {
       axios
-        .get(
+        .post(
           `/api/sendmail?name=${name.value}&email=${email.value}&message=${message.value}`
         )
         .then((res) => {

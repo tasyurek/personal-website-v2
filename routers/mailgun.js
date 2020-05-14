@@ -7,7 +7,7 @@ const mailgun = require("mailgun-js")({
   domain: process.env.MAIL_GUN_DOMAIN,
 });
 
-router.get("/api/sendmail", (req, res) => {
+router.post("/api/sendmail", (req, res) => {
   const output = `
   <div style="background-color: #10111f;color: #a7a8c9; padding: 32px">
     <h2 style="color: #a7a8c9;">You have a new messages</h2>
