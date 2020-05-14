@@ -73,7 +73,7 @@ const Navbar = () => {
             active === "experiances" ? "active-link nav-link" : "nav-link"
           }
         >
-          Experiances
+          Experiences
         </a>
         <a
           href="#education"

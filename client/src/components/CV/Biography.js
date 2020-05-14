@@ -14,7 +14,7 @@ const Biography = () => {
           </p>
           <p>
             My goal is to develop applications that will benefit humanity. I
-            know that I have to work hard to make these applications.
+            know that I have to work hard to build these applications.
           </p>
         </div>
       </div>
