@@ -55,10 +55,4 @@ router.post("/api/logininfo", (req, res) => {
   res.send("Mail has been successfuly sent.");
 });
 
-router.get("/api/stats", (req, res) => {
-  rp(`https://api.mailgun.net/v3/${process.env.MAIL_GUN_DOMAIN}/stats/total`)
-    .then((body) => res.send(body))
-    .catch((e) => res.send(e));
-});
-
 module.exports = router;

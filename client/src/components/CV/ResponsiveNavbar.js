@@ -36,7 +36,7 @@ const ResponsiveNavbar = () => {
           Personal Info
         </a>
         <a href="#experiances" className="nav-link" onClick={onMenuClick}>
-          Experiances
+          Experiences
         </a>
         <a href="#education" className="nav-link" onClick={onMenuClick}>
           Education
