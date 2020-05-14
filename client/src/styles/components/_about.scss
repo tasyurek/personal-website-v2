@@ -28,10 +28,10 @@
   font-weight: 700;
   background-size: 200% 200%;
   background-clip: text;
+  animation: 2s about-header-animation ease-out infinite;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
-  animation: 2s about-header-animation ease-out infinite;
+  -webkit-animation: 2s about-header-animation ease-out infinite;
 }
 
 @keyframes about-header-animation {
