@@ -22,6 +22,10 @@
   width: 100%;
 }
 
+.project__item:last-child {
+  padding-bottom: 0;
+}
+
 .project__item__info {
   width: 50%;
   //margin-bottom: $xl-size;

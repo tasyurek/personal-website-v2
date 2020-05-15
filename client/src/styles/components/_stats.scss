@@ -1,0 +1,37 @@
+.stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: $xxl-size * 2 0;
+}
+
+.stats__text {
+  font-style: $xl-size;
+}
+
+.rainbow-text {
+  display: flex;
+  align-items: center;
+  height: $l-size * 4;
+  font-size: $l-size * 4;
+  margin-top: $l-size;
+  margin-bottom: 0;
+  //min-width: 100%;
+  background: -moz-linear-gradient(left, #ffa500, #fa28bf, #ffa500, #ffa500);
+  background: -webkit-gradient(
+    linear,
+    0% -15%,
+    100% 100%,
+    color-stop(0, #ffa500),
+    color-stop(0.25, #fa28bf),
+    color-stop(0.75, #ffa500),
+    color-stop(1, #ffa500)
+  );
+  font-weight: 700;
+  background-size: 200% 200%;
+  background-clip: text;
+  animation: 2s about-header-animation ease-out infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: 2s about-header-animation ease-out infinite;
+}

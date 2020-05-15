@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import Stats from "./components/Stats";
 
 function App() {
   document.title = "Onur Can Tasyurek";
@@ -13,6 +14,7 @@ function App() {
         <About />
         <Projects />
         <Contact />
+        <Stats />
       </div>
     </div>
   );

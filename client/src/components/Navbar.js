@@ -9,14 +9,16 @@ const Navbar = (props) => {
       try {
         let scroll = this.scrollY;
         scroll += 2;
-        let about = this.document.querySelector("#about");
-        let projects = this.document.querySelector("#projects");
+        const about = this.document.querySelector("#about");
+        const projects = this.document.querySelector("#projects");
+        const contact = this.document.querySelector("#contact");
 
         if (scroll >= about.offsetTop && scroll < projects.offsetTop) {
           setActive("about");
-        }
-        if (scroll >= projects.offsetTop) {
+        } else if (scroll >= projects.offsetTop && scroll < contact.offsetTop) {
           setActive("projects");
+        } else {
+          setActive("contact");
         }
       } catch (e) {
         console.log(e.message);
