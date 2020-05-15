@@ -20,6 +20,7 @@ const WeatherPage = ({ dispatch }) => {
 
   const handleSearchSubmit = (e) => {
     e.preventDefault();
+
     setLoading(true);
     if (!address.trim().length) {
       setError("Please enter a location!");
@@ -43,12 +44,15 @@ const WeatherPage = ({ dispatch }) => {
       <NavBar />
       <div className="weather-app-content">
         <form className="search-bar" onSubmit={handleSearchSubmit}>
-          <input
-            type="text"
-            value={address}
-            onChange={onSearchChange}
-            placeholder="Enter a location..."
-          />
+          <div className="search-bar__input-container">
+            <input
+              type="text"
+              value={address}
+              onChange={onSearchChange}
+              placeholder="Enter a location..."
+            />
+          </div>
+          <button type="submit">Search</button>
         </form>
         {error && <p>{error}</p>}
         {isLoading && !error && <Spinner />}
