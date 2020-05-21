@@ -11,16 +11,16 @@
   height: 100%;
 }
 .search-bar__input-container::before {
+  content: "";
   background-size: $m-size;
   background-repeat: no-repeat;
   background-image: url("./../../assets/search-solid.svg");
-  content: "";
   display: block;
   height: $m-size;
-  left: $m-size;
-  position: absolute;
-  top: $m-size;
   width: $m-size;
+  left: $m-size;
+  top: $m-size;
+  position: absolute;
   z-index: 11;
 }
 

@@ -29,6 +29,14 @@ const CertificateList = () => {
       url:
         "https://www.udemy.com/certificate/UC-360b9f4b-81db-4c01-b58c-9acddbf0f175/",
     },
+    {
+      name: "JavaScript (Basic) Certificate",
+      courseURL: "https://www.hackerrank.com/",
+      organization: "HackerRank",
+      instructor: "HackerRank",
+      receivingDate: "05/2020",
+      url: "https://www.hackerrank.com/certificates/064127529ac8",
+    },
   ];
 
   return certificateList.map((certificate) => {
