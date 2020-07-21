@@ -5,10 +5,6 @@ import ResponsiveNavbar from "./ResponsiveNavbar";
 const Header = () => {
   const [width, setWidth] = useState(window.innerWidth);
 
-  useEffect(() => {
-    console.log(width);
-  }, [width]);
-
   const calcWidth = () => {
     setWidth(window.innerWidth);
   };

@@ -3,15 +3,24 @@
   justify-content: space-between;
 }
 
+.cv-skills__content.personal {
+  justify-content: start !important;
+}
+.cv-skills__content h4 {
+  min-width: 15%;
+}
 .cv-skills__content__group:not(:first-child) {
   padding-left: $xl-size;
+  margin-bottom: $m-size;
   border-left: 1.6px solid $blue-light;
+  width: 85%;
 }
 
 @media only screen and (max-width: 768px) {
   .cv-skills__content {
     flex-direction: column;
   }
+
   .cv-skills__content__group:not(:first-child) {
     padding: 0;
     //padding-bottom: $xl-size;
