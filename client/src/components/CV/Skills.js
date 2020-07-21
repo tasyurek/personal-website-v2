@@ -18,7 +18,6 @@ const Skills = () => {
         <div className="cv-skills__content__group">
           <p>Full Stack Web Developer</p>
           <p>Competitive Programmer</p>
-          <p>Competitive Programmer</p>
           <p>Having fun with code refactoring</p>
         </div>
         <div className="cv-skills__content__group">
