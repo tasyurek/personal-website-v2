@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { ReactComponent as ProfilePhoto } from "../assets/profile2.svg";
+import { ReactComponent as ProfilePhoto } from "../assets/profile.svg";
 
 const Navbar = (props) => {
   const [active, setActive] = useState("about");

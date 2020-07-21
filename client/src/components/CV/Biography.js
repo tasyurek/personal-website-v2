@@ -1,5 +1,5 @@
 import React from "react";
-import { ReactComponent as ProfilePhoto } from "../../assets/profile2.svg";
+import { ReactComponent as ProfilePhoto } from "../../assets/profile.svg";
 const Biography = () => {
   return (
     <div id="biography" className="cv-biography content-pedding">
