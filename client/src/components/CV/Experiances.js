@@ -6,8 +6,7 @@ const Experiances = () => {
       <h3>Experiences</h3>
       <div className="cv-experiances__item">
         <p>
-          I have didn't worked in a company before. I have worked for own
-          projects.
+          I have not worked in a company before, only worked for own projects.
         </p>
       </div>
     </div>
