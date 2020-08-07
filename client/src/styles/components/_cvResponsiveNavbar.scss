@@ -2,40 +2,98 @@
   display: flex;
   flex-direction: column;
   background-color: $blue;
-  width: 80%;
+  // width: 80%;
+  width: 100%;
   margin: auto;
+  border-bottom: 1px solid #16182c;
+}
+
+.cv-responsive-navbar__actions-container {
+  padding: $l-size 0;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .cv-responsive-navbar__actions {
   display: flex;
+  width: 100%;
+  align-items: center;
   justify-content: space-between;
 }
 
-.cv-responsive-navbar__navs .nav-link {
-  display: block;
-  padding: $l-size;
-  font-size: $m-size * 1.1;
-  text-align: center;
-  width: 100%;
+.cv-responsive-navbar__actions .nav-link {
+  display: flex;
+  align-items: center;
 }
 
-.cv-responsive-navbar__navs--closed {
+.cv-responsive-navbar__navs .nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: $m-size * 1.1;
+  text-align: center;
+  height: 60px;
+  width: 100%;
+  border-top: 1px solid #16182c;
+}
+
+.cv-responsive-navbar__navs .nav-link:hover {
+  background-color: lighten($blue, $amount: 5);
+}
+
+.cv-responsive-navbar__navs.cv-responsive-navbar__navs--closed {
+  animation: nav-close 0.2s ease;
+  animation-fill-mode: forwards;
+  height: 0;
   display: none;
+}
+
+.cv-responsive-navbar__navs.cv-responsive-navbar__navs--opened .nav-link {
+  animation: nav-open 0.2s ease;
+}
+
+.menu-icon {
+  height: $xl-size;
+  width: $xl-size;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.menu-icon:hover {
+  background-color: lighten($blue, $amount: 5);
+  cursor: pointer;
+}
+
+@keyframes nav-open {
+  0% {
+    height: 20px;
+  }
+  100% {
+    height: 60px;
+  }
 }
 
 .icon--menu {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 1335px) {
+  .cv-responsive-navbar__actions-container {
+    width: 80%;
+  }
+}
+
 @media only screen and (max-width: 992px) {
-  .cv-responsive-navbar {
+  .cv-responsive-navbar__actions-container {
     width: 85%;
   }
 }
 
 @media only screen and (max-width: 600px) {
-  .cv-responsive-navbar {
-    width: 95%;
-    padding: 0 $m-size;
+  .cv-responsive-navbar__actions-container {
+    width: 90%;
+    //padding: 0 $m-size;
   }
 }

@@ -17,13 +17,19 @@ const ResponsiveNavbar = () => {
 
   return (
     <div className="responsive-navbar">
-      <div className="responsive-navbar__actions">
-        <ProfilePhoto className="header__photo" />
-        <MenuIcon className="icon" onClick={onMenuClick} />
+      <div className="responsive-navbar__actions-container">
+        <div className="responsive-navbar__actions">
+          <ProfilePhoto className="header__photo" />
+          <span className="menu-icon" onClick={onMenuClick}>
+            <MenuIcon className="icon icon--menu" />
+          </span>
+        </div>
       </div>
       <div
         className={
-          isOpen ? "responsive-navbar__navs" : "responsive-navbar__navs--closed"
+          isOpen
+            ? "responsive-navbar__navs responsive-navbar__navs--opened"
+            : "responsive-navbar__navs responsive-navbar__navs--closed"
         }
       >
         <a className="nav-link" href="#about" onClick={onMenuClick}>

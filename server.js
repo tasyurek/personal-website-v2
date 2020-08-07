@@ -4,7 +4,7 @@ const app = express();
 const weatherRouter = require("./weather-app/weather-router");
 const mailgunRouter = require("./routers/mailgun");
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8080;
 
 console.log(process.env.NODE_ENV);
 

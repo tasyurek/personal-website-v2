@@ -16,17 +16,21 @@ const ResponsiveNavbar = () => {
 
   return (
     <div className="cv-responsive-navbar">
-      <div className="cv-responsive-navbar__actions">
-        <a className="nav-link" href="/">
-          <BackIcon className="icon" />
-        </a>
-        <MenuIcon className="icon icon--menu" onClick={onMenuClick} />
+      <div className="cv-responsive-navbar__actions-container">
+        <div className="cv-responsive-navbar__actions">
+          <a className="nav-link" href="/">
+            <BackIcon className="icon" />
+          </a>
+          <span className="menu-icon" onClick={onMenuClick}>
+            <MenuIcon className="icon icon--menu" />
+          </span>
+        </div>
       </div>
       <div
         className={
           isOpen
-            ? "cv-responsive-navbar__navs"
-            : "cv-responsive-navbar__navs--closed"
+            ? "cv-responsive-navbar__navs cv-responsive-navbar__navs--opened"
+            : "cv-responsive-navbar__navs cv-responsive-navbar__navs--closed"
         }
       >
         <a href="#biography" className="nav-link" onClick={onMenuClick}>
@@ -37,6 +41,9 @@ const ResponsiveNavbar = () => {
         </a>
         <a href="#experiances" className="nav-link" onClick={onMenuClick}>
           Experiences
+        </a>
+        <a href="#projects" className="nav-link" onClick={onMenuClick}>
+          Projects
         </a>
         <a href="#education" className="nav-link" onClick={onMenuClick}>
           Education

@@ -40,5 +40,6 @@
       ],
       "extensions": "js,jsx,sass,scss"
     }
-  }
+  },
+  "proxy": "http://localhost:3000"
 }

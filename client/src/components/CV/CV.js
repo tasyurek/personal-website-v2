@@ -7,6 +7,7 @@ import PersonalInfo from "./PersonalInfo";
 import Skills from "./Skills";
 import Certificates from "./Certificates";
 import Header from "./Header";
+import Projects from "./Projects";
 
 const CV = () => {
   document.title = "CV";
@@ -18,6 +19,7 @@ const CV = () => {
         <Biography />
         <PersonalInfo />
         <Experiances />
+        <Projects />
         <Education />
         <Skills />
         <Certificates />

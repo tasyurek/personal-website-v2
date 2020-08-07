@@ -58,6 +58,9 @@
 
 .project__item__img {
   width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .app-link {
@@ -86,6 +89,13 @@
     -4px -4px 8px darken($blue, $amount: 2);
 }
 
+.g-logo {
+  height: $xxl-size * 3;
+}
+.g-logo#logo > * {
+  fill: $grey;
+}
+
 @media only screen and (max-width: 1100px) {
   .projects {
     padding-top: $xxl-size;
@@ -109,5 +119,8 @@
 
   .project__item__info {
     padding-bottom: $xl-size;
+  }
+  .giby .project__item__img {
+    display: none;
   }
 }

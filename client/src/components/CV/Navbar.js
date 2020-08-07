@@ -12,6 +12,7 @@ const Navbar = () => {
         let biography = this.document.querySelector("#biography");
         let personalInfo = this.document.querySelector("#personal-info");
         let experiances = this.document.querySelector("#experiances");
+        let projects = this.document.querySelector("#projects");
         let education = this.document.querySelector("#education");
         let skills = this.document.querySelector("#skills");
 
@@ -25,9 +26,14 @@ const Navbar = () => {
           setActive("personal-info");
         } else if (
           scroll >= experiances.offsetTop &&
-          scroll < education.offsetTop
+          scroll < projects.offsetTop
         ) {
           setActive("experiances");
+        } else if (
+          scroll >= projects.offsetTop &&
+          scroll < education.offsetTop
+        ) {
+          setActive("projects");
         } else if (scroll >= education.offsetTop && scroll < skills.offsetTop) {
           setActive("education");
         } else if (scroll >= skills.offsetTop) {
@@ -74,6 +80,14 @@ const Navbar = () => {
           }
         >
           Experiences
+        </a>
+        <a
+          href="#projects"
+          className={
+            active === "projects" ? "active-link nav-link" : "nav-link"
+          }
+        >
+          Projects
         </a>
         <a
           href="#education"
