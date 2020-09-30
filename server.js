@@ -3,6 +3,7 @@ const path = require("path");
 const app = express();
 const weatherRouter = require("./weather-app/weather-router");
 const mailgunRouter = require("./routers/mailgun");
+const enforce = require("express-sslify");
 
 const port = process.env.PORT || 8080;
 
@@ -10,8 +11,8 @@ console.log(process.env.NODE_ENV);
 
 const publicPath = path.join(__dirname, "client", "build");
 
+app.use(enforce.HTTPS({ trustProtoHeader: true }));
 app.use(express.static(publicPath));
-
 app.use(weatherRouter);
 app.use(mailgunRouter);
 
