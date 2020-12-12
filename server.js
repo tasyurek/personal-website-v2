@@ -8,7 +8,7 @@ const enforce = require("express-sslify");
 const port = process.env.PORT || 8080;
 const publicPath = path.join(__dirname, "client", "build");
 
-app.use(enforce.HTTPS({ trustProtoHeader: true }));
+// app.use(enforce.HTTPS({ trustProtoHeader: true }));
 app.use(express.static(publicPath));
 app.use(weatherRouter);
 app.use(mailgunRouter);
