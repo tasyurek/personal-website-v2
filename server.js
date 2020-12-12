@@ -28,12 +28,7 @@ app.get("*", (req, res) => {
   res.sendFile(path.join(publicPath, "index.html"));
 });
 
-https
-  .createServer(options, function (req, res) {
-    res.writeHead(200);
-    res.end("hello world\n");
-  })
-  .listen(port);
+https.createServer(options, app).listen(port);
 // app.listen(port, () => console.log("server is runnig"));
 
 // asd
