@@ -11,11 +11,9 @@ const https = require("https");
 const fs = require("fs");
 
 const options = {
-  key: fs.readFileSync("key.pem"),
-  cert: fs.readFileSync("cert.pem"),
+  key: fs.readFileSync(__dirname + "/ssl/key.pem", "utf8"),
+  cert: fs.readFileSync(__dirname + "/ssl/cert.pem", "utf8"),
 };
-
-console.log(process.env.NODE_ENV);
 
 const publicPath = path.join(__dirname, "client", "build");
 
