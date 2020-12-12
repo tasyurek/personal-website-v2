@@ -26,7 +26,13 @@ app.get("*", (req, res) => {
   res.sendFile(path.join(publicPath, "index.html"));
 });
 
-https.createServer(options, app).listen(port);
+const server = https.createServer(options, app).listen(port);
+
+server.on("clientError", (err, socket) => {
+  console.error(err);
+  socket.end("HTTP/1.1 400 Bad Request\r\n\r\n");
+});
+
 // app.listen(port, () => console.log("server is runnig"));
 
 // asd
