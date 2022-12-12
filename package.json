@@ -28,7 +28,7 @@
     "chalk": "^4.0.0",
     "concurrently": "^5.2.0",
     "dotenv": "^8.2.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-sslify": "^1.2.0",
     "greenlock-express": "^4.0.3",
     "mailgun-js": "^0.22.0",
